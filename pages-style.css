@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Rubik", serif;
+    font-family: "Amiri";
+    direction: rtl;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+
+
+}
+
+body {
+    /* background-image: url("../StoerImage/back2.jpg"); */
+    overflow: hidden;
+    background-color: #E1F5FE;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    direction: rtl;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    letter-spacing: -3px;
+    border-bottom: 2px solid #BA68C8;
+    border-top: 2px solid #FF5722;
+    padding: 0 3px;
+    border-radius: 20px;
+    border-right: 5px solid teal;
+    border-left: 5px solid brown;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: teal;
+}
+
+nav a {
+    text-decoration: none;
+    color: teal;
+    font-size: 30px;
+    margin: 0 15px;
+
+}
+
+nav a img {
+
+    border: 1px solid teal;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.logo span {
+
+    color: brown;
+    font-size: 40px;
+    text-decoration: none;
+
+}
+
+
+nav {
+    z-index: 2888;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px -1px #00968896;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cfdfdfd9;
+    width: 100%;
+
+
+}
+
+h4 {
+
+    font-size: 17px;
+    color: teal;
+    padding: 0 5px;
+    border-radius: 20px;
+    border-right: 8px solid teal;
+    border-bottom: 5px solid brown;
+    border-top: 5px solid brown;
+}
+
+.modas .moda {
+    font-size: small;
+    width: 64px;
+    text-decoration: none;
+    color: white;
+    padding: 0 8px;
+    border-radius: 20px;
+    background-color: teal;
+    text-align: center;
+    box-shadow: 0 2px 5px -1px #00968896;
+    transition: all 0.3s;
+
+
+
+}
+
+.modas {
+    display: flex;
+    margin-top: 4px;
+    column-gap: 5px;
+}
+
+.moda:hover {
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 5px;
+    padding: 3px;
+    overflow-y: scroll;
+    width: 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 15px
+}
+
+
+main div {
+    background-color: teal;
+    border-radius: 5px;
+    border: 2px teal solid;
+    text-align: center;
+}
+
+main span {
+    font-size: 16px;
+    color: tomato;
+    border: 2px #BA68C8 solid;
+    border-radius: 5px;
+    padding: 0px 1px;
+
+
+}
+
+main span:hover {
+    text-decoration: underline;
+
+}
+
+h1 {
+    word-spacing: 3px;
+
+}
+
+h3 {
+    font-size: 14px;
+    color: brown;
+    padding: 0 5px;
+    border-radius: 9px;
+    border-top: 2px solid teal;
+    border-bottom: 2px solid brown;
+}
+
+main div img {
+    width: 100%;
+    height: 160px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 5px 0px teal;
+}
+
+main span:hover {
+    cursor: pointer;
+}
+
+footer {
+    z-index: 11;
+    width: 100%;
+    background-color: #cfdfdfd9;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 2px 5px 3px #00968896;
+}
+
+
+
+@media only screen and (max-width:768px) {
+
+
+    .logo span {
+        font-size: 25px;
+        color: brown;
+
+    }
+
+    main {
+        width: 80%;
+    }
+
+    main span {
+        font-size: 14px;
+    }
+
+    main div img {
+        height: 110px;
+
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    main div p span {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+
+}

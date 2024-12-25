@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Rubik", serif;
+    font-family: "Amiri";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    height: 100vh;
+    background-image: url("./StoerImage/back4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav {
+
+    padding: 0 15px 0 10px;
+    box-shadow: 0 2px 5px -1px #00968896;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cfdfdfd9;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+ul li {
+
+    margin-left: 25px;
+
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: teal;
+}
+
+nav a:hover {
+    cursor: pointer;
+    border-bottom: teal 2px solid;
+}
+
+.logo {
+    padding: 0;
+    border-radius: 20px;
+    border-right: 5px solid teal;
+    border-left: 5px solid brown;
+    text-transform: uppercase;
+    color: teal;
+    font-size: 30px;
+}
+
+
+
+span {
+    color: brown;
+    font-size: 40px;
+}
+
+.box .wakebp {
+    margin: 0 4px;
+    border-right: 4px solid teal;
+    border-left: 5px solid brown;
+    border-radius: 15px;
+    font-size: 20px;
+    color: teal;
+    font-weight: bold;
+    background-color: #faebd79c;
+}
+
+.box .wakebp span {
+    font-size: 30px;
+    color: brown;
+}
+
+.box {
+    padding: 10px;
+    background-color: rgb(128 128 128 / 39%);
+    border-right: 4px solid teal;
+    border-left: 5px solid brown;
+    width: 60%;
+    bottom: 150px;
+    direction: rtl;
+
+}
+
+
+.box p {
+    font-size: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 24px;
+    border-radius: 10px;
+    color: #632007;
+    font-weight: bold;
+    line-height: 35px;
+    text-align: justify;
+
+}
+
+.btns {
+    position: absolute;
+    width: fit-content;
+    bottom: 70px;
+
+}
+
+.btn-potion {
+    height: 45px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-potion .xwar {
+    width: 80px;
+
+}
+
+h3 {
+
+    font-size: 17px;
+    color: brown;
+    padding: 0 5px;
+    border-radius: 20px;
+    border-right: 8px solid teal;
+    border-bottom: 5px solid brown;
+    border-top: 5px solid brown;
+}
+
+.btn-potion a {
+    transition: all 0.2s ease;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 100px;
+    border-radius: 23px;
+    border-right: 6px solid teal;
+    border-left: 6px solid brown;
+    background-color: rgb(150 150 183 / 81%);
+}
+
+.btn-potion a:hover {
+    margin-bottom: 6px;
+
+}
+
+
+
+
+.btns img:hover {
+    box-shadow: 0 0 0 0 yellow;
+}
+
+.btns img {
+    padding: 3px;
+    width: 45px;
+    height: 40px;
+    border-radius: 20px;
+    border-right: 4px solid teal;
+    border-left: 4px solid brown;
+}
+
+footer {
+    background-color: #cfdfdfd9;
+    font-weight: normal;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 5px 3px #00968896;
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
+    span {
+        color: brown;
+        font-size: 30px;
+    }
+
+    .box .wakebp span {
+        font-size: 23px;
+        color: brown;
+    }
+
+    .btn-potion a {
+        width: 60px;
+    }
+
+    .logo {
+        font-size: 20px;
+        border-radius: 25px;
+    }
+
+    .box {
+        border-radius: 30px;
+        direction: rtl;
+        font-size: 17px;
+        line-height: normal;
+        width: 90%;
+
+    }
+
+    .btns {
+        bottom: 20px;
+    }
+
+    .btns img {
+        width: 35px;
+        height: 35px;
+    }
+
+    footer {
+        font-size: 13px;
+    }
+
+}
