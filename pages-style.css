@@ -127,10 +127,10 @@ main {
     overflow-y: scroll;
     width: 55%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(6, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
 }
 
 
@@ -139,6 +139,7 @@ main div {
     border: 2px teal solid;
     text-align: center;
     background-color: teal;
+    box-shadow: 0 0 6px -1px #000000ad;
 }
 
 main span {
