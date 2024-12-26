@@ -60,13 +60,16 @@ nav a:hover {
 }
 
 .logo {
-    padding: 0;
+    letter-spacing: -3px;
+    border-bottom: 2px solid #BA68C8;
+    border-top: 2px solid #FF5722;
+    padding: 0 3px;
     border-radius: 20px;
     border-right: 5px solid teal;
     border-left: 5px solid brown;
     text-transform: uppercase;
-    color: teal;
     font-size: 30px;
+    color: teal;
 }
 
 
